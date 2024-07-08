@@ -1,0 +1,79 @@
+@use "../../Sass/utils/" as u;
+
+// .experience2 {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
+
+.experience__container {
+  @include u.breakpoint-min(large) {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    gap: u.rem(40);
+    margin: 0 auto;
+  }
+}
+
+.experience__card {
+  &:not(:last-child) {
+    margin-bottom: u.rem(30);
+
+    @include u.breakpoint-min(large) {
+      margin-bottom: 0;
+    }
+  }
+  background-color: var(--color-bg-variant);
+  padding: 2rem;
+  border-radius: 1rem;
+  justify-self: center;
+  margin-top: 0rem;
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-bg-variant);
+  }
+
+  &__link {
+    font-size: u.rem(18);
+    display: flex;
+    align-items: center;
+    margin-bottom: u.rem(2);
+    color: var(--color-primary);
+    font-weight: bold;
+
+    &:hover {
+      color: var(white);
+    }
+  }
+
+  &__role {
+    font-size: u.rem(14);
+  }
+  &__time {
+    font-size: u.rem(14);
+    margin-bottom: u.rem(10);
+  }
+
+  &__desc {
+    font-size: u.rem(14);
+    max-width: 350px;
+  }
+
+  &__stack {
+    margin-top: u.rem(15);
+    display: flex;
+    flex-wrap: wrap;
+    gap: u.rem(10);
+
+    & li {
+      font-size: u.rem(13);
+      text-transform: capitalize;
+      border: 1px solid white;
+      color: var(--color-primary);
+      border-radius: 0.5rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
