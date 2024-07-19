@@ -37,6 +37,14 @@ function Experience() {
                         <article className="experience__container__frontent__content__details">
                             <BsFillPatchCheckFill className="icon" />
                             <div>
+                                <h4>TYPESCRIPT</h4>
+                                <small className="text-light">Intermediate</small>
+                            </div>
+                        </article>
+
+                        <article className="experience__container__frontent__content__details">
+                            <BsFillPatchCheckFill className="icon" />
+                            <div>
                                 <h4>SASS</h4>
                                 <small className="text-light">Intermediate</small>
                             </div>

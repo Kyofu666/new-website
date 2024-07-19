@@ -557,7 +557,6 @@ nav a.active {
 .contact__container {
   width: 58%;
   display: grid;
-  grid-template-columns: 38% 58%;
   gap: 12%;
 }
 @media (max-width: 61.25em) {
@@ -573,17 +572,31 @@ nav a.active {
 }
 .contact__container__leftSide {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
   gap: 1.2rem;
+}
+@media (max-width: 61.25em) {
+  .contact__container__leftSide {
+    flex-direction: column;
+    align-items: normal;
+    gap: 2rem;
+  }
 }
 .contact__container__leftSide__option {
   background-color: var(--color-bg-variant);
   padding: 1.2rem 0;
   border-radius: 1.2rem;
+  width: 40%;
   text-align: center;
   border: 1px solid transparent;
   transition: all 400ms ease;
+}
+@media (max-width: 61.25em) {
+  .contact__container__leftSide__option {
+    width: auto;
+  }
 }
 .contact__container__leftSide__option:hover {
   background-color: transparent;

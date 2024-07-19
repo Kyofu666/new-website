@@ -67,7 +67,7 @@ const Contact = () => {
                         </a>
                     </article>
                 </div>
-                <form
+                {/* <form
                     onSubmit={sendEmail}
                     className="contact__container__rightSide"
                 >
@@ -85,10 +85,10 @@ const Contact = () => {
                         required
                     ></textarea>
 
-                    <button type="submit" className="btn btn--primary">
+                    <button type="submit" disabled={true} className="btn btn--primary">
                         Send Message
                     </button>
-                </form>
+                </form> */}
             </div>
         </section>
     );
